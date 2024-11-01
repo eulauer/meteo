@@ -17,7 +17,11 @@ curl -H "Accept: application/json" -o ./csv/${date}.csv -X GET "https://api.open
 #curl -H "Accept: application/json" -o ./json/${date}.json -X GET "https://api.open-meteo.com/v1/forecast?latitude="${y}"&longitude="${x}"&daily=rain_sum&forecast_days=14&models=gfs_global"
 #https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&format=csv
 
-python3 meteo.py
+python meteo.py
+
+git add -A
+git commit -m 'Added my project'
+git push -u -f origin main
 
 #jq -s '.' ./json/*.json   > meteo.json
 
