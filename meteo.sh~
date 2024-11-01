@@ -23,6 +23,8 @@ git add -A
 git commit -m 'Added my project'
 git push -u -f origin main
 
+scp meteo.html peterh@se06:/home/peterh/www/sueringwarte/
+
 #jq -s '.' ./json/*.json   > meteo.json
 
 #https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=52.5&longitude=13.4&start_date=2024-10-14&end_date=2024-10-28&daily=rain_sum&models=gfs_global
