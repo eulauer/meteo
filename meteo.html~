@@ -9,7 +9,7 @@
   <div id="vis"/>
   <script>
     const spec = {
-  "data": {"url": "https://raw.githubusercontent.com/eulauer/csv/refs/heads/main/meteo.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/meteo.csv"},
     "title": {
     "text": "GFS Ensemble Forecasts | Berlin",
     "frame": "bounds"
