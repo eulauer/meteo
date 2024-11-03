@@ -10,6 +10,19 @@
   <script>
     const spec = {
   "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/meteo.csv"},
+  
+   "config": {
+    "axis": {
+      "labelFont": "serif",
+      "titleFont": "serif",
+      "labelFontSize": 20,
+      "titleFontSize": 20,
+      "titlePadding": 20
+    }
+  },
+  
+  
+  
     "title": {
     "text": "GFS Ensemble Forecasts | Berlin",
     "titleFontSize": 30,
