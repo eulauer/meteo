@@ -12,6 +12,7 @@
   "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/meteo.csv"},
     "title": {
     "text": "GFS Ensemble Forecasts | Berlin",
+    "titleFontSize": 30,
     "frame": "bounds"
   },
 
