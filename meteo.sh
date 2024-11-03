@@ -1,12 +1,21 @@
+for d in 14
+
+do
+
+date=$(date -d "${d}"" day ago" '+%Y-%m-%d')
+
+echo ${date}
+
+#rm ./csv/${date}.csv
+
+done
+
+
+
 x=13.4
 y=52.5
 
-#x=12.5
-#y=42.5
-
-
 date=$(date '+%Y-%m-%d')
-#date=$(date -d "1 day ago" '+%Y-%m-%d')
 
 para='rain_sum'
 #para='temperature_2m_max'
@@ -24,6 +33,7 @@ git commit -m 'Added my project'
 git push -u -f origin main
 
 scp meteo.html peterh@se06:/home/peterh/www/sueringwarte/
-#jq -s '.' ./json/*.json   > meteo.json
+
+
 
 #https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=52.5&longitude=13.4&start_date=2024-10-14&end_date=2024-10-28&daily=rain_sum&models=gfs_global
