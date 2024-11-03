@@ -28,7 +28,7 @@
   "height": 500,
   "encoding": {
     "x": {"field": "date", "type": "temporal","timeUnit": "yearmonthdate","title":null},
-    "y": {"field": "rain","type":"quantitative","scale": {"domain": [0, 30]},"title":"Accumulated Rainfall | mm"},
+    "y": {"field": "rain","type":"quantitative","scale": {"domain": [0, 30]},"title":"Accumulated Rainfall | mm"}, axis: {fontSize: 20},
     "color": {"field": "init"},
   }
 };
