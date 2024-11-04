@@ -46,7 +46,7 @@
   "encoding": {
     "x": {"field": "date", "type": "temporal","timeUnit": "yearmonthdate","title":null},
     "y": {"field": "rain","type":"quantitative","scale": {"domain": [0, 30]},"title":"Accumulated Rainfall | mm"},
-    "color": {"field": "init"},
+    "color": {"field": "Runs"},
   }
 };
     vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
