@@ -52,7 +52,7 @@
     "color": {"field": "init"},
   }
 };
-    vegaEmbed("#vis", spec, {mode: "vega-lite",theme: 'dark'}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis", spec, {mode: "vega-lite",theme: 'fivethirtyeight'}).then(console.log).catch(console.warn);
   </script>
 </body>
 </html>
