@@ -15,7 +15,6 @@
     "axis": {
       "labelFont": "serif",
       "titleFont": "serif",
-      "subtitleFont": "serif",
       "labelFontSize": 20,
       "titleFontSize": 30,
       "titlePadding": 20
@@ -29,6 +28,7 @@
     "title": {
     "text": "GFS Ensemble Forecasts",
     "subtitle": "Berlin",
+    "subtitleFont": "serif",
     "titleFontSize": 30,
     "frame": "bounds"
   },
