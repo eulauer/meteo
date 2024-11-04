@@ -18,7 +18,7 @@
       "labelFontSize": 20,
       "titleFontSize": 30,
       "titlePadding": 20,
-      "legend": {"labelFont": "serif","labelFontSize": 12},
+      "legend": {"labelFont": "serif","labelFontSize": 22},
     },
     
     "title":{"fontSize": 30,"font":"serif"},
