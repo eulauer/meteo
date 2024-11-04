@@ -12,13 +12,13 @@
   "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/meteo.csv"},
   
    "config": {
+    "legend": {"labelFont": "serif","labelFontSize": 22},
     "axis": {
       "labelFont": "serif",
       "titleFont": "serif",
       "labelFontSize": 20,
       "titleFontSize": 30,
       "titlePadding": 20,
-      "legend": {"labelFont": "serif","labelFontSize": 22},
     },
     
     "title":{"fontSize": 30,"font":"serif"},
