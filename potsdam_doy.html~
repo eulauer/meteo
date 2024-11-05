@@ -39,7 +39,7 @@
       "mark": {"type":"line","color":"dodgerblue","interpolate": "basis"},
       "encoding": {
         "x": {"timeUnit": "monthdate","field": "date","type": "temporal"},
-        "y": {"aggregate": "mean","field": "tmit","type":"quantitative","title":null}
+        "y": {"aggregate": "mean","field": "tmax","type":"quantitative","title":null}
       }
     }
   ]
