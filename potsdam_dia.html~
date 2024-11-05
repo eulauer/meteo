@@ -20,6 +20,7 @@
       "titlePadding": 20,
     },
    "title":{"fontSize": 30,"font":"serif"},
+   "legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}
 },
     "title": {
     "text": "Klimadiagramm",
@@ -34,8 +35,8 @@
 "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
 "height": 500,
 "width": 1500,
-"title": {"text":"Klimatrends, Potsdam","fontSize":30,"subtitle":"xxx","anchor":"start","subtitleColor":"red"},
-"config": {"legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}},
+//"title": {"text":"Klimatrends, Potsdam","fontSize":30,"subtitle":"xxx","anchor":"start","subtitleColor":"red"},
+//"config": {"legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}},
 "params": 
     [{
       "name": "_select_",
