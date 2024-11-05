@@ -85,7 +85,7 @@
     {
       "transform":
         [{
-          "filter": {"timeUnit": "year", "field":"date","range":[1991,2020]}
+          "filter": {"timeUnit": "year", "field":"date","range":[1994,2023]}
           },
           {
           "calculate": "datum[_select_]",
@@ -103,7 +103,7 @@
     {
       "transform":
           [{
-            "filter": {"timeUnit": "year", "field":"date","range":[1991,2020]}
+            "filter": {"timeUnit": "year", "field":"date","range":[1994,2023]}
           },
           {
             "calculate": "datum[_select_]",
