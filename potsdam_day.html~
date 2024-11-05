@@ -51,7 +51,7 @@
       "mark": "rule",
       "encoding":
         {
-          "y": {"aggregate": "mean","field": "y","type": "quantitative","axis":{"labelFontSize":16}},
+          "y": {"aggregate": "mean","field": "y","type": "quantitative"},
           "tooltip": {"field": "y","aggregate": "mean","type": "quantitative","format": ".1f"},
           "color": {"value": "black"},
           "size": {"value": 1}
