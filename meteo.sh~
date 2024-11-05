@@ -33,5 +33,6 @@ git push -u -f origin main
 
 scp meteo.html peterh@se06:/home/peterh/www/sueringwarte/
 scp potsdam_day.html peterh@se06:/home/peterh/www/sueringwarte/
+scp potsdam_gwl.html peterh@se06:/home/peterh/www/sueringwarte/
 
 python potsdam_day.py
