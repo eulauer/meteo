@@ -10,6 +10,27 @@
   <script>
     const spec = {
 
+   "config": {
+    "legend": {"labelFont": "serif","labelFontSize": 16,"titleFont":"serif","titleFontSize": 20},
+    "axis": {
+      "labelFont": "serif",
+      "titleFont": "serif",
+      "labelFontSize": 20,
+      "titleFontSize": 30,
+      "titlePadding": 20,
+    },
+   "title":{"fontSize": 30,"font":"serif"},
+},
+    "title": {
+    "text": "Klimadiagramm",
+    "subtitle": "Potsdam",
+    "subtitleFont": "serif",
+    "titleFontSize": 30,
+    "subtitleFontSize": 20,
+    "frame": "bounds"
+  },
+
+
 "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
 "height": 500,
 "width": 1500,
