@@ -1,3 +1,8 @@
+#!/bin/sh
+
+cd $HOME/sueringwarte/meteo/
+
+
 for d in 15 16 17
 
 do
