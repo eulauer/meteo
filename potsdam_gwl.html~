@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
+  "data": {"url": "includes/potsdam_day.csv"},
+  "vconcat": 
+    [{
+      "encoding": 
+          {
+          "color": 
+            {
+             "condition": {
+             "param": "brush",
+             "title": "Patterns",
+             "field": "gwl",
+             "type": "nominal",
+             "scale": {
+               "domain": ["W","SW","NW","TRM","S","NE","N","HN","HF","HM","BM","HB","U","SE","TB","HNF","TRW"],
+               "range": ["green","red","blue","magenta","red","blue","blue","yellow","yellow","orange","orange","yellow","gray","red","green","yellow","red"]
+                      }
+             },
+          "value": "lightgray"
+          },
+          "size": {"title": "Precipitation","field": "nied","scale": {"domain": [-1, 40]},"type": "quantitative"},
+          "x": {"field": "date","timeUnit": "monthdate","title": null,"axis": {"format": "%b"}},
+          "y": {"title": "Maximum Daily Temperature (°C)","field": "tmax","scale": {"domain": [-15, 40]},"type": "quantitative"}
+         },
+      "width": 1000,
+      "height": 500,
+      "mark": "point",
+      "params": [{
+        "name": "brush",
+        "select": {"type": "interval", "encodings": ["x"]}
+      }],
+      "transform": [{"filter": {"param": "click"}}]
+    },
+    {
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "click",
+            "field": "gwl",
+            "scale": {
+              "domain": ["W","SW","NW","TRM","S","NE","N","HN","HF","HM","BM","HB","U","SE","TB","HNF","TRW"],
+              "range": ["green","red","blue","magenta","red","blue","blue","yellow","yellow","orange","orange","yellow","gray","red","green","yellow","red"]}
+          },
+          "value": "lightgray"
+        },
+        "x": {"aggregate": "count"},
+        "y": {"title": null, "field": "gwl"}
+      },
+      "width": 1000,
+      "mark": "bar",
+      "params": [{
+        "name": "click",
+        "select": {"type": "point", "encodings": ["color"]}
+      }],
+      "transform": [{"filter": {"param": "brush"}}]
+    }
+  ]
+};    
+    
+    vegaEmbed("#vis", spec, {mode: "vega-lite",theme: 'fivethirtyeight'}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
