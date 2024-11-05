@@ -11,7 +11,7 @@
     const spec = {
  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
  "title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
- "data": {"url": "includes/potsdam_day.json"},
+ "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
  "height": 500,
  "layer": 
     [{
