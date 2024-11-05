@@ -31,8 +31,7 @@ f.close()
 
 f = open('03987_day.json','w')
 
-f.wite('[\n')
-
+f.write('[\n')
 
 for d in range(nd):
 
