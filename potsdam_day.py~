@@ -37,7 +37,7 @@ for d in range(nd):
 
     if((jj[d]>=1961)&(tg[d]>-900)):
 
-       f.wite('  {\n')
+       f.write('  {\n')
        
        f.write('    "date": "%04i-%02i-%02i",\n'%(jj[d],mm[d],dd[d]))
        f.write('    "tmin": %.1f,\n'%tn[d])
