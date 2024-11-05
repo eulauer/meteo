@@ -12,7 +12,7 @@
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "height": 500,
 "width": 1100,
-"data": {"name":"Potsdam","url":"https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/potsdam_day.csv"},
+"data": {"name":"Potsdam","url":"https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
 "title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
 
 "params": [{"name":"select","value": "tmit","bind": {"input": "select","options":["tmin","tmit","tmax","relf","sonn","ludr","nied"]}}],
