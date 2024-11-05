@@ -46,7 +46,7 @@ for d in range(nd):
        f.write('    "relf": %.1f,\n'%rf[d])
        f.write('    "sonn": %.1f,\n'%sd[d])
        f.write('    "ludr": %.1f,\n'%ld[d])
-       f.write('    "nied": %.1f,\n'%rr[d])
+       f.write('    "nied": %.1f\n'%rr[d])
 
        f.write('  },\n')
        
