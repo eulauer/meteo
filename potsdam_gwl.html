@@ -10,7 +10,34 @@
   <script>
     const spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
+  
+     "config": {
+    "legend": {"labelFont": "serif","labelFontSize": 16,"titleFont":"serif","titleFontSize": 20},
+    "axis": {
+      "labelFont": "serif",
+      "titleFont": "serif",
+      "labelFontSize": 20,
+      "titleFontSize": 30,
+      "titlePadding": 20,
+    },
+
+    "title":{"fontSize": 30,"font":"serif"},
+  },
+
+  
+  //"title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
+  
+  
+      "title": {
+    "text": "GFS Ensemble Forecasts",
+    "subtitle": "Berlin",
+    "subtitleFont": "serif",
+    "titleFontSize": 30,
+    "subtitleFontSize": 20,
+    "frame": "bounds"
+  },
+
+  
   "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/potsdam_day.csv"},
   "vconcat": 
     [{
