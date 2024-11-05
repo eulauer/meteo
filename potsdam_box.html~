@@ -11,6 +11,8 @@
     const spec = {
 
    "config": {
+    "view": {"strokeWidth": 0,"step": 10},
+    "axis": {"domain": true}
     "legend": {"labelFont": "serif","labelFontSize": 16,"titleFont":"serif","titleFontSize": 20},
     "axis": {
       "labelFont": "serif",
@@ -33,11 +35,11 @@
 
   "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
   //"title": {"text": "Klimadiagramm, Potdsdam","anchor":"start","fontSize":20},
-  "config": 
-      {
-      "view": {"strokeWidth": 0,"step": 10},
-      "axis": {"domain": true}
-      },
+  //"config": 
+  //    {
+  //    "view": {"strokeWidth": 0,"step": 10},
+  //    "axis": {"domain": true}
+  //    },
 
   "mark": "rect",
   "height": 500,
