@@ -29,6 +29,32 @@ for d in range(nd):
 f.close()
 
 
+f = open('03987_day.json','w')
+
+f.wite('[\n')
+
+
+for d in range(nd):
+
+    if((jj[d]>=1961)&(tg[d]>-900)):
+
+       f.wite('  {\n')
+       
+       f.write('    "date": "%04i-%02i-%02i",\n'%(jj[d],mm[d],dd[d]))
+       f.write('    "tmin": %.1f,\n'%tn[d])
+       f.write('    "tmit": %.1f,\n'%tg[d])
+       f.write('    "tmax": %.1f,\n'%tx[d])
+       f.write('    "relf": %.1f,\n'%rf[d])
+       f.write('    "sonn": %.1f,\n'%sd[d])
+       f.write('    "ludr": %.1f,\n'%ld[d])
+       f.write('    "nied": %.1f,\n'%rr[d])
+
+       f.wite('  },\n')
+       
+f.wite(']')
+
+f.close()
+
 '''
 f=open('potsdam_day.html','w')
 
