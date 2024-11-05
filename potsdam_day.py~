@@ -2,7 +2,7 @@ import numpy as N
 import pylab as P
 #import Image,ImageFont,ImageDraw,ImageOps
 
-file = '03987.dat'
+file = '/home/peterh/daily/03987.dat'
 
 jj=N.genfromtxt(file,usecols=(2),skip_header=1,dtype='i')
 mm=N.genfromtxt(file,usecols=(1),skip_header=1,dtype='i')
