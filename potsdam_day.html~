@@ -19,6 +19,7 @@
       "titleFontSize": 30,
       "titlePadding": 20,
     },
+"title":{"fontSize": 30,"font":"serif"},
 
 "data": {"name":"Potsdam","url":"https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
 "title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
