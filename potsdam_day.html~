@@ -20,8 +20,18 @@
     },
 "title":{"fontSize": 30,"font":"serif"},
 
+    "title": {
+    "text": "Klimatrends",
+    "subtitle": "Potsdam",
+    "subtitleFont": "serif",
+    "titleFontSize": 30,
+    "subtitleFontSize": 20,
+    "frame": "bounds"
+  },
+
+
 "data": {"name":"Potsdam","url":"https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
-"title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
+#"title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
 
 "params": [{"name":"select","value": "tmit","bind": {"input": "select","options":["tmin","tmit","tmax","relf","sonn","ludr","nied"]}}],
 "transform":[{"calculate": "datum[select]","as": "y"}],
