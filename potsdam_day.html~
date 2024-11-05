@@ -12,6 +12,14 @@
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "height": 500,
 "width": 1500,
+    "axis": {
+      "labelFont": "serif",
+      "titleFont": "serif",
+      "labelFontSize": 20,
+      "titleFontSize": 30,
+      "titlePadding": 20,
+    },
+
 "data": {"name":"Potsdam","url":"https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
 "title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
 
