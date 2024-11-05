@@ -9,9 +9,10 @@
   <div id="vis"/>
   <script>
     const spec = {
-"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"data": {"url": "includes/potsdam.csv"},
+
+"data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
 "height": 500,
+"width": 1500,
 "title": {"text":"Klimatrends, Potsdam","fontSize":30,"subtitle":"xxx","anchor":"start","subtitleColor":"red"},
 "config": {"legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}},
 "params": 

@@ -9,9 +9,31 @@
   <div id="vis"/>
   <script>
     const spec = {
-"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+   "config": {
+    "legend": {"labelFont": "serif","labelFontSize": 16,"titleFont":"serif","titleFontSize": 20},
+    "axis": {
+      "labelFont": "serif",
+      "titleFont": "serif",
+      "labelFontSize": 20,
+      "titleFontSize": 30,
+      "titlePadding": 20,
+    },
+   "title":{"fontSize": 30,"font":"serif"},
+},
+    "title": {
+    "text": "Klimadiagramm",
+    "subtitle": "Potsdam",
+    "subtitleFont": "serif",
+    "titleFontSize": 30,
+    "subtitleFontSize": 20,
+    "frame": "bounds"
+  },
+
+
 "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
 "height": 500,
+"width": 1500,
 "title": {"text":"Klimatrends, Potsdam","fontSize":30,"subtitle":"xxx","anchor":"start","subtitleColor":"red"},
 "config": {"legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}},
 "params": 
