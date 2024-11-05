@@ -48,9 +48,9 @@ for d in range(nd):
        f.write('    "ludr": %.1f,\n'%ld[d])
        f.write('    "nied": %.1f,\n'%rr[d])
 
-       f.wite('  },\n')
+       f.write('  },\n')
        
-f.wite(']')
+f.write(']')
 
 f.close()
 
