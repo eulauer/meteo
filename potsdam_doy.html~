@@ -9,7 +9,6 @@
   <div id="vis"/>
   <script>
     const spec = {
-
    "config": {
     "legend": {"labelFont": "serif","labelFontSize": 16,"titleFont":"serif","titleFontSize": 20},
     "axis": {
@@ -32,94 +31,19 @@
   },
 
 
-"data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
 "height": 500,
-"width": 1500,
-//"title": {"text":"Klimatrends, Potsdam","fontSize":30,"subtitle":"xxx","anchor":"start","subtitleColor":"red"},
-//"config": {"legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}},
-"params": 
-    [{
-      "name": "_select_",
-      "value": "tmit",
-      "bind": {"input": "select","options": ["tmin","tmit","tmax","relf","sonn","ludr","nied"]}
-    }],
-
-"layer": 
-    [{
-      "transform":
-          [{
-            "filter": {"timeUnit": "year", "field":"date","range":[1961,1990]}
-          },
-          {
-            "calculate": "datum[_select_]",
-            "as": "y"
-          }],
-      "mark": {"type":"line","color":"dodgerblue","strokeWidth":3,"point": {"filled": false,"fill": "white","size":100,"color":"dodgerblue"}},
-      "encoding": 
-          {
-          "x": {"type": "temporal", "field": "date", "timeUnit": "month","title":null},
-          "y": {"type": "quantitative","aggregate": "mean","field": "y","scale":{"zero":false},"title":null},
-          "tooltip": {"field": "y","aggregate": "mean","type": "quantitative","format":".1f"} 
-          }
-    },
-
+"width":1500,
+  "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},      
+  "layer": [
     {
-      "transform":
-          [{
-            "filter": {"timeUnit": "year", "field":"date","range":[1961,1990]}
-          },
-          {
-            "calculate": "datum[_select_]",
-            "as": "y"
-          }],
-      "mark": {"type":"rule"},
-      "encoding": 
-          {
-          "y": {"aggregate": "mean","field": "y","type": "quantitative"},
-          "tooltip": {"field": "y","aggregate": "mean","type": "quantitative","format": ".2f"},
-          "color": {"value": "dodgerblue"},
-          "size": {"value": 3}
-          }
-    },
-
-    {
-      "transform":
-        [{
-          "filter": {"timeUnit": "year", "field":"date","range":[1994,2023]}
-          },
-          {
-          "calculate": "datum[_select_]",
-          "as": "y"
-          }],
-      "mark": {"type":"line","color":"orangered","strokeWidth":3,"point": {"filled": false,"fill": "white","size":100,"color":"orangered"}},
-      "encoding": 
-          {
-            "x": {"type": "temporal", "field": "date", "timeUnit": "month","title":null},
-            "y": {"type": "quantitative","aggregate": "mean","field": "y","scale": {"zero":false},"title":null},
-            "tooltip": {"field": "y","aggregate": "mean","type": "quantitative","format":
-            ".1f"}
-          }
-    },
-
-    {
-      "transform":
-          [{
-            "filter": {"timeUnit": "year", "field":"date","range":[1994,2023]}
-          },
-          {
-            "calculate": "datum[_select_]",
-            "as": "y"
-          }],
-      "mark": {"type":"rule"},
-      "encoding": 
-          {
-          "y": {"aggregate": "mean","field": "y","type":"quantitative"},
-          "tooltip": {"field": "y","aggregate": "mean","type": "quantitative","format":".1f"},
-          "color": {"value":"orangered","legend": {"title": "xx"}},
-          "size": {"value": 3}
-          }
-    }] 
-};
+      "mark": {"type":"line","color":"dodgerblue","interpolate": "basis"},
+      "encoding": {
+        "x": {"timeUnit": "monthdate","field": "date","type": "temporal"},
+        "y": {"aggregate": "mean","field": "tmit","type":"quantitative","title":null}
+      }
+    }
+  ]
+}
     
     vegaEmbed("#vis", spec, {mode: "vega-lite",theme: 'fivethirtyeight'}).then(console.log).catch(console.warn);
   </script>
