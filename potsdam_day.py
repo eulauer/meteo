@@ -48,10 +48,16 @@ for d in range(nd):
        f.write('    "ludr": %.1f,\n'%ld[d])
        f.write('    "nied": %.1f\n'%rr[d])
 
-       f.write('  },\n')
+       if(tg[d+1]>-900):
+
+           f.write('  },\n')
+           
+       else:
+       
+           f.write('  }\n')
        
        
-f.write('{}]')
+f.write(']')
 
 f.close()
 
