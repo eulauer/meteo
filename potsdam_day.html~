@@ -9,7 +9,6 @@
   <div id="vis"/>
   <script>
     const spec = {
-"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "height": 500,
 "width": 1500,
     "axis": {
