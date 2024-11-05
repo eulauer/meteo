@@ -52,7 +52,7 @@
     }
 
     ]
-},    
+};
     
     vegaEmbed("#vis", spec, {mode: "vega-lite",theme: 'fivethirtyeight'}).then(console.log).catch(console.warn);
   </script>
