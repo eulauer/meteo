@@ -23,7 +23,7 @@ const spec = {
    "legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}
 },
     "title": {
-    "text": "Klimadiagramm",
+    "text": "Grosswetterlagen",
     "subtitle": "Potsdam",
     "subtitleFont": "serif",
     "titleFontSize": 30,
