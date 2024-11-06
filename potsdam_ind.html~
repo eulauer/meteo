@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+
+   "config": {
+    "legend": {"labelFont": "serif","labelFontSize": 16,"titleFont":"serif","titleFontSize": 20},
+    "axis": {
+      "labelFont": "serif",
+      "titleFont": "serif",
+      "labelFontSize": 20,
+      "titleFontSize": 30,
+      "titlePadding": 20,
+    },
+   "title":{"fontSize": 30,"font":"serif"},
+   "legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}
+},
+    "title": {
+    "text": "Klimadiagramm",
+    "subtitle": "Potsdam",
+    "subtitleFont": "serif",
+    "titleFontSize": 30,
+    "subtitleFontSize": 20,
+    "frame": "bounds"
+  },
+
+"height": 500,
+"width": 1500,
+"padding": 5,
+"data": {"name":"Potsdam","url": "03987_year.csv"},
+"title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
+
+"params": 
+    [{
+      "name": "_select_",
+      "value": "tx00",
+      "bind": {"input": "select","options": ["tx00","tx01","tx25","tx30","tx99","pr30","pr99"]}
+    }],
+
+"transform": 
+    [{
+      "calculate": "datum[_select_]",
+      "as": "y"
+    }],
+
+"layer": 
+    [{
+      "mark": {"type":"point","point": true,"color":"dodgerblue","size":50},
+      "encoding": 
+        {
+          "x": {"field": "date", "timeUnit": "year","type": "quantitative","title":null,"axis": {"values": [1960,1970,1980,1990,2000,2010,2020]}},
+          "y": {"field": "y","aggregate": "mean","scale": {"zero": false},"color": {"field": "location"},"legend":null,"title":null},
+          "tooltip": {"field": "y","aggregate": "mean","type": "quantitative","format": ".1f"}
+        }
+    },
+
+    {
+      "mark": "rule",
+      "encoding": 
+        {
+          "y": {"aggregate": "mean","field": "y","type":"quantitative","title":null},
+          "tooltip": {"field": "y","aggregate": "mean","type": "quantitative","format": ".1f"},
+          "color": {"value": "black"},
+          "size": {"value": 2}
+        }
+    },
+
+    {
+      "mark": {"type": "line","color": "dodgerblue","strokeWidth":5},
+      "transform": [{"regression": "y","on": "date"}],
+      "encoding":
+        {
+          "x": {"field": "date", "timeUnit": "year","type": "quantitative","title":null,"axis": {"values": [1960,1970,1980,1990,2000,2010,2020]}},
+          "y": {"field": "y","type": "quantitative","title":null}
+        }
+    }
+
+    ]
+};
+    
+    vegaEmbed("#vis", spec, {mode: "vega-lite",theme: 'fivethirtyeight'}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
