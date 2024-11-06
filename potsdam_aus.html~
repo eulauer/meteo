@@ -35,7 +35,7 @@ const spec = {
 "height": 500,
 "width":1500,
 
-"data": {"url": "includes/gwl.csv"},
+"data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/potsdam_day.csv"},
 //  "config": 
 //     {
 //      "view": {"strokeWidth": 0,"step": 10},
