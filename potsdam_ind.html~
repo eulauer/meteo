@@ -34,7 +34,7 @@
 "height": 500,
 "width": 1500,
 "padding": 5,
-"data": {"name":"Potsdam","url": "03987_year.csv"},
+"data": {"name":"Potsdam","url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_year.csv"},
 "title": {"text": "Klimatrends, Potsdam","anchor":"start","fontSize":20},
 
 "params": 
