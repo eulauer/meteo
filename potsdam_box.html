@@ -34,12 +34,6 @@
   },
 
   "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},
-  //"title": {"text": "Klimadiagramm, Potdsdam","anchor":"start","fontSize":20},
-  //"config": 
-  //    {
-  //    "view": {"strokeWidth": 0,"step": 10},
-  //    "axis": {"domain": true}
-  //    },
 
   "mark": "rect",
   "height": 500,
@@ -48,7 +42,7 @@
      {
       "x": {"field": "date","timeUnit": "date","type": "ordinal","title": null,"axis": {"labelAngle": 0,"format": "%e"}},
       "y": {"field": "date","timeUnit": "month","type": "ordinal","title": null},
-      "color": {"field": "nied","aggregate": "mean","type": "quantitative","scale": {"domain":[1,3],"scheme":"yellowgreenblue"},"legend":{"title":"mm/d"}}
+      "color": {"field": "nied","aggregate": "mean","type": "quantitative","scale":{"domain":[1,4],"scheme":"yellowgreenblue"},"legend":{"title":"mm/d"}}
      }
 };
     
