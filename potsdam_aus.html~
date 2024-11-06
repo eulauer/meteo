@@ -34,16 +34,21 @@ const spec = {
 
 "height": 500,
 "width":1500,
-  "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_day.csv"},      
-  "layer": [
-    {
-      "mark": {"type":"line","color":"dodgerblue","interpolate": "basis"},
-      "encoding": {
-        "x": {"timeUnit": "monthdate","field": "date","type": "temporal"},
-        "y": {"aggregate": "mean","field": "nied","type":"quantitative","title":null}
-      }
-    }
-  ]
+
+"data": {"url": "includes/gwl.csv"},
+//  "config": 
+//     {
+//      "view": {"strokeWidth": 0,"step": 10},
+//      "axis": {"domain": true}
+//     },
+"mark": "rect",
+
+"encoding": 
+{
+"x": {"field": "gwl","type": "ordinal","title": null},
+"y": {"field": "date","timeUnit": "month","type": "ordinal","title": null},
+"color": {"field": "nied","aggregate": "mean","type": "quantitative","scale": {"domain":[1,3],"scheme":"yellowgreenblue"},"legend": {"title":"mm/d"}}
+}
 }
     
 vegaEmbed("#vis", spec, {mode: "vega-lite",theme: 'fivethirtyeight'}).then(console.log).catch(console.warn);

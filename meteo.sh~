@@ -25,7 +25,7 @@ echo ${date}
 
 curl -H "Accept: application/json" -o ./csv/${date}.csv -X GET "https://api.open-meteo.com/v1/forecast?latitude="${y}"&longitude="${x}"&daily=${para}&forecast_days=14&models=gfs_global&format=csv"
 
-#python meteo.py
+python meteo.py
 
 git add -A
 git commit -m 'Added my project'
