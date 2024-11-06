@@ -18,7 +18,9 @@ const spec = {
       "labelFontSize": 20,
       "titleFontSize": 30,
       "titlePadding": 20,
+      "domain": true
     },
+   "view": {"strokeWidth": 0,"step": 10},
    "title":{"fontSize": 30,"font":"serif"},
    "legend": {"orient": "bottom", "layout":{"bottom":{"anchor":"middle"}}}
 },
