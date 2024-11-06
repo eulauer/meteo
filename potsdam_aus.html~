@@ -38,18 +38,14 @@ const spec = {
 "width":1500,
 
 "data": {"url": "https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/potsdam_day.csv"},
-//  "config": 
-//     {
-//      "view": {"strokeWidth": 0,"step": 10},
-//      "axis": {"domain": true}
-//     },
 "mark": "rect",
 
 "encoding": 
 {
 "x": {"field": "gwl","type": "ordinal","title": null},
 "y": {"field": "date","timeUnit": "month","type": "ordinal","title": null},
-"color": {"field": "nied","aggregate": "mean","type": "quantitative","scale":{"domain":[1,4],"scheme":"yellowgreenblue"},"legend": {"title":"mm/d"}}
+//"color": {"field": "nied","aggregate": "mean","type": "quantitative","scale":{"domain":[1,4],"scheme":"yellowgreenblue"},"legend": {"title":"mm/d"}}
+"color": {"field": "tmit","aggregate": "mean","type": "quantitative","scale":{"domain":[-5,20],"scheme":"spectral"},"legend": {"title":"mm/d"}}
 }
 }
     
