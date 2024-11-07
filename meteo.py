@@ -10,6 +10,9 @@ files = glob.glob("./csv/*.csv")
 f = open('meteo.csv','w')
 f.write('init,date,rain\n')
 
+f.write('%s,%s,%.1f\n'%('today',today,0))
+f.write('%s,%s,%.1f\n'%('today',today,30))
+
 for file in files:
 
     print (file)
@@ -20,9 +23,6 @@ for file in files:
     rain = N.cumsum(rain)
 
     nd = len(date)
-    
-    f.write('%s,%s,%.1f\n'%('today',today,0))
-    f.write('%s,%s,%.1f\n'%('today',today,30))
     
     for d in range(nd):
     

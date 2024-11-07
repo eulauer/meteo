@@ -22,7 +22,7 @@ for file in files:
     nd = len(date)
     
     f.write('%s,%s,%.1f\n'%('today',today,0))
-    f.write('%s,%s,%.1f\n'%('today',today,100))
+    f.write('%s,%s,%.1f\n'%('today',today,30))
     
     for d in range(nd):
     
