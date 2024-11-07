@@ -1,5 +1,9 @@
 import glob
 import numpy as N
+import datetime
+
+today = datetime.date.today()
+print(today)
 
 files = glob.glob("./csv/*.csv")
 
@@ -16,6 +20,9 @@ for file in files:
     rain = N.cumsum(rain)
 
     nd = len(date)
+    
+    f.write('%s,%s,%.1f\n'%('today',today,0))
+    f.write('%s,%s,%.1f\n'%('today',today,100))
     
     for d in range(nd):
     
