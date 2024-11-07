@@ -31,7 +31,7 @@ const spec = {
 "encoding": 
 {
 "x": {"field": "date", "type": "temporal","timeUnit": "yearmonthdate","title":null},
-"y": {"field": "rain","type":"quantitative","scale": {"domain": [-5, 30]},"title":"Maximum Temperature | °C"},
+"y": {"field": "rain","type":"quantitative","scale": {"domain": [0, 300]},"title":"Accumulated Temperature | °C"},
 "tooltip": {"field": "value","type": "quantitative","format": ".1f"},
 "color": {"field": "init"},
 }

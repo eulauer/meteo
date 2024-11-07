@@ -32,7 +32,7 @@ const spec = {
 {
 "x": {"field": "date", "type": "temporal","timeUnit": "yearmonthdate","title":null},
 "y": {"field": "rain","type":"quantitative","scale": {"domain": [0, 30]},"title":"Accumulated Rainfall | mm"},
-"tooltip": {"field": "rain","type": "quantitative","format": ".1f"},
+"tooltip": {"field": "value","type": "quantitative","format": ".1f"},
 "color": {"field": "init"},
 }
 
