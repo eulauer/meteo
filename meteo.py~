@@ -21,8 +21,8 @@ for file in files:
 
     nd = len(date)
     
-    #f.write('%s,%s,%.1f\n'%(file[6:16],date[d],rain[d]))
-    #f.write('%s,%s,%.1f\n'%(file[6:16],date[d],rain[d]))
+    f.write('%s,%s,%.1f\n'%('today',today,0))
+    f.write('%s,%s,%.1f\n'%('today',today,100))
     
     for d in range(nd):
     
