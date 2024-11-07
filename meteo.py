@@ -5,30 +5,32 @@ import datetime
 today = datetime.date.today()
 print(today)
 
-files = glob.glob("./csv/nied_*.csv")
+for para in ['nied','tmax']:
 
-f = open('meteo_nied.csv','w')
-f.write('init,date,rain\n')
+    files = glob.glob("./csv/%s_*.csv"%para)
 
-f.write('%s,%s,%.1f\n'%('today',today,0))
-f.write('%s,%s,%.1f\n'%('today',today,30))
+    f = open('meteo_%s.csv'%para,'w')
+    f.write('init,date,value\n')
 
-for file in files:
+    f.write('%s,%s,%.1f\n'%('today',today,0))
+    f.write('%s,%s,%.1f\n'%('today',today,30))
 
-    print (file)
+    for file in files:
+
+        print (file)
     
-    date = N.genfromtxt(file,usecols=(0),delimiter=',',skip_header=4,dtype=str)
-    rain = N.genfromtxt(file,usecols=(1),delimiter=',',skip_header=4,dtype=float)
+        date = N.genfromtxt(file,usecols=(0),delimiter=',',skip_header=4,dtype=str)
+        rain = N.genfromtxt(file,usecols=(1),delimiter=',',skip_header=4,dtype=float)
 
-    rain = N.cumsum(rain)
+        rain = N.cumsum(rain)
 
-    nd = len(date)
+        nd = len(date)
     
-    for d in range(nd):
+        for d in range(nd):
     
-        f.write('%s,%s,%.1f\n'%(file[6:16],date[d],rain[d]))
+            f.write('%s,%s,%.1f\n'%(file[6:16],date[d],rain[d]))
 
-f.close()
+    f.close()
 
     
      
