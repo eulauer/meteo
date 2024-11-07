@@ -5,9 +5,9 @@ import datetime
 today = datetime.date.today()
 print(today)
 
-files = glob.glob("./csv/*.csv")
+files = glob.glob("./csv/nied_*.csv")
 
-f = open('meteo.csv','w')
+f = open('meteo_nied.csv','w')
 f.write('init,date,rain\n')
 
 f.write('%s,%s,%.1f\n'%('today',today,0))

@@ -23,7 +23,11 @@ para='rain_sum'
 
 echo ${date}
 
-curl -H "Accept: application/json" -o ./csv/${date}.csv -X GET "https://api.open-meteo.com/v1/forecast?latitude="${y}"&longitude="${x}"&daily=${para}&forecast_days=14&models=gfs_global&format=csv"
+curl -H "Accept: application/json" -o ./csv/nied_${date}.csv -X GET "https://api.open-meteo.com/v1/forecast?latitude="${y}"&longitude="${x}"&daily=${para}&forecast_days=14&models=gfs_global&format=csv"
+
+para='temperature_2m_max'
+
+curl -H "Accept: application/json" -o ./csv/tmax_${date}.csv -X GET "https://api.open-meteo.com/v1/forecast?latitude="${y}"&longitude="${x}"&daily=${para}&forecast_days=14&models=gfs_global&format=csv"
 
 python meteo.py
 
