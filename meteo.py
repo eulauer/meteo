@@ -28,7 +28,7 @@ for para in ['nied','tmax']:
     
         for d in range(nd):
     
-            f.write('%s,%s,%.1f\n'%(file[6:16],date[d],rain[d]))
+            f.write('%s,%s,%.1f\n'%(file[11:21],date[d],rain[d]))
 
     f.close()
 
