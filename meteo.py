@@ -22,7 +22,7 @@ for para in ['nied','tmax']:
         date = N.genfromtxt(file,usecols=(0),delimiter=',',skip_header=4,dtype=str)
         rain = N.genfromtxt(file,usecols=(1),delimiter=',',skip_header=4,dtype=float)
 
-        rain = N.cumsum(rain)
+        if(para=='nied'): rain = N.cumsum(rain)
 
         nd = len(date)
     
