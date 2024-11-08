@@ -12,8 +12,15 @@ for para in ['nied','tmax']:
     f = open('meteo_%s.csv'%para,'w')
     f.write('init,date,value\n')
 
-    f.write('%s,%s,%.1f\n'%('today',today,0))
-    f.write('%s,%s,%.1f\n'%('today',today,30))
+    if(para=='nied'):
+
+       f.write('%s,%s,%.1f\n'%('today',today,0))
+       f.write('%s,%s,%.1f\n'%('today',today,30))
+
+    if(para=='tmax'):
+
+       f.write('%s,%s,%.1f\n'%('today',today,-5))
+       f.write('%s,%s,%.1f\n'%('today',today,30))
 
     for file in files:
 
