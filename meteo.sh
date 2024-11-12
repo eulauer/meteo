@@ -18,7 +18,7 @@ y=52.5
 
 date=$(date '+%Y-%m-%d')
 
-para='rain_sum'
+para='precipitation_sum'
 #para='temperature_2m_max'
 
 echo ${date}
