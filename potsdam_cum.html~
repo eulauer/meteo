@@ -12,7 +12,7 @@
 const spec = {
   
 "data": {"url":
-"https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03087_cum.csv"},
+"https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03987_cum.csv"},
   
 "config": 
 {
