@@ -30,7 +30,7 @@ const spec = {
   
 "encoding": 
 {
-"x": {"field": "doy", "type": "temporal","timeUnit": "yearmonthdate","title":null},
+"x": {"field": "doy"},
 "y": {"field": "tmit","type":"quantitative","scale": {"domain": [-500,4000]},"title":"Accumulated Temperature | degC"},
 "tooltip": {"field": "tmit","type": "quantitative","format": ".1f"},
 "color": {"field": "year"},
