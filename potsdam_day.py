@@ -82,11 +82,13 @@ for j in jo:
        for d in id:
       
            doy = doy+1
+          
+           if(tg[d]>-100):
            
-           tcum = tcum+tg[d]
-           rcum = rcum+rr[d]
+              tcum = tcum+tg[d]
+              rcum = rcum+rr[d]
       
-           f.write('%i,%i,%.1f,%i\n'%(jj[d],doy,tcum,rcum))
+              f.write('%i,%i,%.1f,%i\n'%(jj[d],doy,tcum,rcum))
 
 f.close()
 
