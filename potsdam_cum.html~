@@ -26,7 +26,7 @@ const spec = {
 "mark": {"type": "line"},
 
 "width": 1500,
-"height": 700,
+"height": 750,
   
 "encoding": 
 {
