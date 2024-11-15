@@ -31,8 +31,8 @@ const spec = {
 "encoding": 
 {
 "x": {"field": "doy","type":"quantitative","scale": {"domain": [0,365]},"title":"Day of Year"},
-"y": {"field": "tmit","type":"quantitative","scale": {"domain": [-500,4500]},"title":"Accumulated Temperature | degC"},
-"tooltip": {"field": "tmit","type": "quantitative","format": "i"},
+"y": {"field": "tmit","type":"quantitative","scale": {"domain": [0,1000]},"title":"Accumulated Precipitation | mm"},
+"tooltip": {"field": "nied","type": "quantitative","format": "i"},
 "color": {"field": "year","type": "ordinal","scale": {"scheme": "turbo"}}
 }
 
