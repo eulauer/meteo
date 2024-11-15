@@ -76,6 +76,8 @@ for j in jo:
        tcum = 0
        rcum = 0
        doy = 0
+
+       f.write('%i,%i,%.1f,%i\n'%(j,0,tcum,rcum))
        
        for d in id:
       
