@@ -69,7 +69,7 @@ jo = N.array(list(set(jj)))
 
 for j in jo:
   
-    if(j>1990):
+    if(j>1960):
  
        id = N.where(jj==j)[0]
        
