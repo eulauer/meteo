@@ -26,11 +26,11 @@ const spec = {
 "mark": {"type": "line"},
 
 "width": 1500,
-"height": 500,
+"height": 700,
   
 "encoding": 
 {
-"x": {"field": "doy","type":"quantitative","scale": {"domain": [-500,4500]},"title":"Day of Year"},
+"x": {"field": "doy","type":"quantitative","scale": {"domain": [0,365]},"title":"Day of Year"},
 "y": {"field": "tmit","type":"quantitative","scale": {"domain": [-500,4500]},"title":"Accumulated Temperature | degC"},
 "tooltip": {"field": "tmit","type": "quantitative","format": ".1f"},
 "color": {"field": "year"},
