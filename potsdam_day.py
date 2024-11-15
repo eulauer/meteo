@@ -63,9 +63,10 @@ f.close()
 
 f = open('03987_cum.csv','w')
 
-f.write('year,doy,tmit,nied\n')
+f.write('year,doy,tmit,nied,color\n')
 
 jo = N.array(list(set(jj)))
+je = N.max(jo)
 
 for j in jo:
   
@@ -77,7 +78,7 @@ for j in jo:
        rcum = 0
        doy = 0
 
-       f.write('%i,%i,%.1f,%i\n'%(j,0,tcum,rcum))
+       f.write('%i,%i,%.1f,%i,%s\n'%(j,0,tcum,rcum,'gray'))
        
        for d in id:
       
@@ -88,7 +89,7 @@ for j in jo:
               tcum = tcum+tg[d]
               rcum = rcum+rr[d]
       
-              f.write('%i,%i,%.1f,%i\n'%(jj[d],doy,tcum,rcum))
+              if(j==je): f.write('%i,%i,%.1f,%i,%s\n'%(jj[d],doy,tcum,rcum,'black'))
 
 f.close()
 
