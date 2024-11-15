@@ -61,6 +61,33 @@ f.write(']')
 
 f.close()
 
+f = open('03987_cum.csv','w')
+
+f.write('year,doy,tmit,nied\n')
+
+jo = N.array(list(set(jj)))
+
+for j in jo:
+  
+    if(j>1961):
+ 
+       id = N.where(jj==j)[0]
+       
+       tcum = 0
+       rcum = 0
+       doy = 0
+       
+       for d in id:
+      
+           doy = doy+1
+           
+           tcum = tcum+tg[d]
+           rcum = rcum+rr[d]
+      
+           f.write('%i,%i,%.1f,%i\n'%(jj[d],doy,tcum,rcum))
+
+f.close()
+
 '''
 f=open('potsdam_day.html','w')
 

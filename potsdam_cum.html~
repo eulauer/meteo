@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+<div id="vis"/>
+<script>
+
+const spec = {
+  
+"data": {"url":
+"https://raw.githubusercontent.com/eulauer/meteo/refs/heads/main/03087_cum.csv"},
+  
+"config": 
+{
+"legend": {"labelFont": "serif","labelFontSize": 16,"titleFont":"serif","titleFontSize": 20},
+"axis": {"labelFont": "serif","titleFont": "serif","labelFontSize": 20,"titleFontSize": 30,"titlePadding": 20},
+"title":{"fontSize": 30,"font":"serif"},
+},  
+  
+"title": {"text": "GFS Ensemble Forecasts","subtitle": "Berlin","subtitleFont": "serif","titleFontSize": 30,"subtitleFontSize": 20,"frame": "bounds"},
+
+"mark": {"type": "line","point": {"filled": false,"fill": "white"}},
+
+"width": 1500,
+"height": 500,
+  
+"encoding": 
+{
+"x": {"field": "year", "type": "temporal","timeUnit": "yearmonthdate","title":null},
+"y": {"field": "tmit","type":"quantitative","scale": {"domain": [-500,4000]},"title":"Accumulated Temperature | degC"},
+"tooltip": {"field": "tmit","type": "quantitative","format": ".1f"},
+"color": {"field": "init"},
+}
+
+};
+    
+vegaEmbed("#vis", spec, {mode: "vega-lite",theme: 'fivethirtyeight'}).then(console.log).catch(console.warn);
+
+</script>
+</body>
+</html>

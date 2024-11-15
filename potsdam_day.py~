@@ -48,10 +48,43 @@ for d in range(nd):
        f.write('    "ludr": %.1f,\n'%ld[d])
        f.write('    "nied": %.1f\n'%rr[d])
 
-       f.write('  },\n')
+       if(tg[d+1]>-900):
+
+           f.write('  },\n')
+           
+       else:
+       
+           f.write('  }\n')
        
        
-f.write('{}]')
+f.write(']')
+
+f.close()
+
+f = open('03987_cum.csv','w')
+
+f.write('year,doy,tmit,nied\n')
+
+jo = N.array(list(set(jj)))
+
+for j in jo:
+  
+    if(j>1961):
+ 
+       id = N.where(jj==j)[0]
+       
+       tcum = 0
+       rcum = 0
+       doy = 0
+       
+       for d in id:
+      
+           doy = doy+1
+           
+           tcum = tcum+tg[d]
+           rcum = rcum+rr[d]
+      
+           f.write('%i,%i,%.1f,%.1f\n'%(jj[d],doy,tcum,rcum))
 
 f.close()
 
