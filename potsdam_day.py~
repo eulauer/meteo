@@ -72,12 +72,8 @@ for j in jo:
   
     if(j>1960):
  
-       print (j)
- 
        id = N.where(jj==j)[0]
-       
-       print (len(id))
-       
+              
        tcum = 0
        rcum = 0
        doy = 0

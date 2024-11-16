@@ -47,6 +47,7 @@ scp potsdam_ind.html peterh@se06:/home/peterh/www/sueringwarte/
 scp potsdam_aus.html peterh@se06:/home/peterh/www/sueringwarte/
 scp potsdam_tcum.html peterh@se06:/home/peterh/www/sueringwarte/
 scp potsdam_rcum.html peterh@se06:/home/peterh/www/sueringwarte/
+scp potsdam_pcum.html peterh@se06:/home/peterh/www/sueringwarte/
 
 python potsdam_day.py
 python potsdam_year.py
