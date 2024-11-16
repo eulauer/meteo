@@ -91,7 +91,7 @@ for j in jo:
               rcum = rcum+rr[d]
               pcum = pcum+ld[d]
       
-              f.write('%i,%i,%.1f,%i,%.1f'%(jj[d],doy,tcum,rcum,pcum))
+              f.write('%i,%i,%.1f,%i,%.1f\n'%(jj[d],doy,tcum,rcum,pcum))
 
 f.close()
 
