@@ -73,7 +73,7 @@ for j in jo:
     if(j>1960):
  
        id = N.where(jj==j)[0]
-       
+              
        tcum = 0
        rcum = 0
        doy = 0
@@ -89,7 +89,7 @@ for j in jo:
               tcum = tcum+tg[d]
               rcum = rcum+rr[d]
       
-              if(j==je): f.write('%i,%i,%.1f,%i,%s\n'%(jj[d],doy,tcum,rcum,'black'))
+              f.write('%i,%i,%.1f,%i,%s\n'%(jj[d],doy,tcum,rcum,'black'))
 
 f.close()
 
