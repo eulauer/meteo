@@ -89,7 +89,7 @@ for j in jo:
            
               tcum = tcum+tg[d]
               rcum = rcum+rr[d]
-              pcum = pcum+ld[d]-1001.
+              pcum = pcum+ld[d]-1002.
       
               f.write('%i,%i,%.1f,%i,%.1f\n'%(jj[d],doy,tcum,rcum,pcum))
 
