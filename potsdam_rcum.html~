@@ -51,7 +51,7 @@ const spec = {
 "gray","gray","gray","gray","gray","gray","gray","gray","gray","gray",
 "gray","gray","gray","gray","gray","gray","gray","gray","gray","gray",
 "gray","gray","gray","gray","gray","gray","gray","gray","gray","gray",
-"gray","gray","gray","red"
+"gray","gray","black","red"
 ]}}
 }
 
