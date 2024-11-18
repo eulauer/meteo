@@ -23,8 +23,8 @@ const spec = {
   
 "title": {"text": "GFS Ensemble Forecasts","subtitle": "Berlin","subtitleFont": "serif","titleFontSize": 30,"subtitleFontSize": 20,"frame": "bounds"},
 
-//"mark": {"type": "line","point": {"filled": false,"fill": "white"}},
-"mark": {"type": "line"},
+"mark": {"type": "line","point": {"filled": false,"fill": "white"}},
+//"mark": {"type": "line"},
 
 "width": 1500,
 "height": 500,
