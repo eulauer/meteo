@@ -3,7 +3,7 @@
 cd $HOME/sueringwarte/meteo/
 
 
-for d in 15 16 17
+for d in 15
 
 do
 

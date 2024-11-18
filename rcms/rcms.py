@@ -1,0 +1,43 @@
+import numpy as N
+import pylab as P
+#import Image,ImageFont,ImageDraw,ImageOps
+
+file = 'rcms_tas.csv'
+
+tt=N.genfromtxt(file,usecols=(0),skip_header=2,dtype=str)
+tg=N.genfromtxt(file,usecols=(1),skip_header=2,dtype=float)
+
+file = 'rcms_pr.csv'
+
+pr=N.genfromtxt(file,usecols=(1),skip_header=2,dtype=float)
+
+jj = []
+
+for t in tt:
+
+    jj.append(int(t[0:4]))
+
+jj = N.array(jj)    
+
+jo = N.array(list(set(jj)))
+
+f = open('rcms.csv','w')
+f.write('year,doy,tmit,nied\n')
+
+for j in jo:
+
+    id = N.where(jj==j)[0]
+    
+    doy = 0
+    tcum = 0
+    rcum = 0
+
+    for d in id:
+    
+       doy = doy+1
+       tcum = tcum+tg[d]
+       rcum = rcum+pr[d]
+
+       f.write('%i,%i,%.1f,%.1f\n'%(jj[d],doy,tcum,rcum))
+
+f.close()
