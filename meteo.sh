@@ -3,13 +3,14 @@
 cd $HOME/sueringwarte/meteo/
 
 
-for d in 15 16 17
+for d in 15
 
 do
 
 date=$(date -d "${d}"" day ago" '+%Y-%m-%d')
 
-rm ./csv/${date}.csv
+rm ./csv/nied_${date}.csv
+rm ./csv/tmax_${date}.csv
 
 done
 
