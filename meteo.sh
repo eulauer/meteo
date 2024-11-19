@@ -53,5 +53,7 @@ scp potsdam_pcum.html peterh@se06:/home/peterh/www/sueringwarte/
 scp ./rcms/potsdam_rcum.html peterh@se06:/home/peterh/www/sueringwarte/rcms/
 scp ./rcms/potsdam_tcum.html peterh@se06:/home/peterh/www/sueringwarte/rcms/
 
+scp readme.md peterh@se06:/home/peterh/www/sueringwarte/
+
 python potsdam_day.py
 python potsdam_year.py
