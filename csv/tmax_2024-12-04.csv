@@ -1,7 +1,18 @@
-<html>
-<head><title>502 Bad Gateway</title></head>
-<body>
-<center><h1>502 Bad Gateway</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
+latitude,longitude,elevation,utc_offset_seconds,timezone,timezone_abbreviation
+52.54149,13.359375,43.0,0,GMT,GMT
+
+time,temperature_2m_max (°C)
+2024-12-04,5.0
+2024-12-05,5.2
+2024-12-06,8.2
+2024-12-07,11.7
+2024-12-08,4.8
+2024-12-09,3.5
+2024-12-10,4.3
+2024-12-11,4.8
+2024-12-12,3.7
+2024-12-13,1.6
+2024-12-14,4.2
+2024-12-15,4.3
+2024-12-16,2.9
+2024-12-17,1.5
