@@ -19,8 +19,8 @@ for para in ['nied','tmax']:
 
     if(para=='tmax'):
 
-       f.write('%s,%s,%.1f\n'%('today',today,-5))
-       f.write('%s,%s,%.1f\n'%('today',today,30))
+       f.write('%s,%s,%.1f\n'%('today',today,-4))
+       f.write('%s,%s,%.1f\n'%('today',today,36))
 
     for file in files:
 

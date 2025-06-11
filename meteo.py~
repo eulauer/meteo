@@ -15,7 +15,7 @@ for para in ['nied','tmax']:
     if(para=='nied'):
 
        f.write('%s,%s,%.1f\n'%('today',today,0))
-       f.write('%s,%s,%.1f\n'%('today',today,30))
+       f.write('%s,%s,%.1f\n'%('today',today,50))
 
     if(para=='tmax'):
 
