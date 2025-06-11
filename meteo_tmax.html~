@@ -35,7 +35,7 @@ const spec = {
 "y": {"field": "value","type":"quantitative","scale": {"domain": [-5, 30]},"title":"Maximum Temperature | degC"},
 "tooltip": {"field": "value","type": "quantitative","format": ".1f"},
 //"color": {"field": "init"},
-"color": {"field": "init","type": "ordinal","scale": {"scheme": "turbo"}}
+"color": {"field": "init","type": "ordinal","scale": {"scheme": "goldgreen"}}
 }
 
 };
